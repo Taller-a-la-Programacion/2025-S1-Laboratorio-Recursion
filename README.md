@@ -1,28 +1,20 @@
-# 2021 Semestre 2
-# Portafolio 3
+# 2025 Semestre 1
 
 ## Instrucciones Generales
-- El archivo **debe** llamarse **Portafolio3.py**
+- El archivo **debe** llamarse **Laboratorio7.py**
 - **Debe** respetar el nombre de las funciones y el nombre de los parámetros que más adelante se describen
 - Deben contruir las funciones con **Python**
-- Debe utilizar la programación **Iterativa haciendo uso del While y/o For**
+- Debe utilizar la programación **recursiva**
 - Debe crear los comentarios de cada función tomando en cuenta **Nombre**, **Entrada**, **Salida** y **Restricciones**
-- Fecha de entrega: **Miércoles 27 de Octubre a las 10pm**
 
-## Construir Número
-Construir una función que forme un número a partir de otro, considerando sólo los **dígitos pares** del número de entrada.
 
-```python
->>>construir(2345)
-24
-```
-
-## Digito Menor
-Construir una función  que reciba un número entero y retorne el dígito menor de este.
+## Convertir a Binario
+Construir una función que convierta un número de base 10 a su representación en binario. Tomar en cuenta que el parámetro de entrada debe ser **entero y mayor o igual a CERO**.
+Seguir las mismas reglas para la conversion, division entera, módulo y exponentes.
 
 ```python
->>>digitoMenor(569803)
-0
+>>>convertirBinario(2345)
+100100101001
 ```
 
 ## Digitos ordenados
@@ -31,32 +23,6 @@ Construir una función que reciba un número e indique si sus dígitos están or
 ```python
 >>>digitosOrdenados(2345678)
 True
-```
-
-## Elevar número
-Construir una función que eleve un número x a una potencia n, sin utilizar el operador de exponente. Hacer uso del **FOR**
-
-```python
->>>elevarNumero(5, 3)
-125
-```
-
-##	Invertir elementos lista
-Escriba un programa con sintaxis Python cuya función principal se llame **invertirLista(lista)**, que reciba como entrada una lista con números enteros denominado **lista** y que retorne la lista pero con los elementos invertidos 
-
-
-```python
->>>invertirLista([5,8,45,96])
-[96, 45, 8, 5]
-
->>> invertirLista([56, 85,8,45,96])
-[96, 45, 8, 85, 56]
-
->>> invertirLista([])
-"Error: La lista debe contener al menos 2 elementos"
-
->>> invertirLista([2,5,7,"ABC"])
-"Error: La lista debe elementos tipo entero"
 ```
 
 ##	Elemento menor y mayor de la lista
@@ -102,29 +68,7 @@ Escriba un programa con sintaxis Python cuya función principal se llame **elimi
 "Error: La segunda lista debe elementos tipo entero"
 
 ```
-##	Niveles lista
-Escriba un programa con sintaxis Python cuya función principal se llame **nivelesLista(lista)**, que reciba como entrada una lista con cualquier tipo de valores y que retorne una lista con los niveles de profundidad. La cantidad de elementos de cada sub lista debe de ser de 1
 
-```python
->>>nivelesLista( [ [[[[]]]], 2, [] ] )
-[4 ,0, 1]
->>> nivelesLista([2], [], [[[[[[]]]]]])
-[1, 1, 6]
->>> nivelesLista(25)
-"Error: El parámetro de entrada debe ser una lista"
-```
-##	Devolver Indices
-Escriba un programa con sintaxis Python cuya función principal se llame **obtenerIndicesListas([lista1, lista2, lista3])**, que reciba como entrada una lista con lista y que retorne una lista de lista con los ínidces en donde aparezca un número primo o negativo
-
-```python
-v1 = [12,  56, 7 , 11 , -8, 3] 
-v2 = [-26, 2, 75 , 19 , -18, 23] 
-v3 = [6, 2, 10 , 50, 90] 
-
->>> obtenerIndicesListas([v1, v2, v3])
-[[2,3,4,5], [0,1,3,4,5], [1]]
-
->>> obtenerIndicesListas(25)
 "Error: El parámetro de entrada debe ser una lista"
 
 ```
