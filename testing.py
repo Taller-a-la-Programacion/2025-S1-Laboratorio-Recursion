@@ -48,6 +48,20 @@ def test_eliminarElementosLista_6():
     assert isinstance(Laboratorio7.extremosLista([2,5,7,"ABC"], [2,8]), str) == isinstance("Error: La primera lista debe elementos tipo entero", str) 
 
 def test_eliminarElementosLista_7():
-    assert isinstance(Portafolio3.extremosLista([2,5,7], [2,"8"]), str) == isinstance("Error: La segunda lista debe elementos tipo entero", str) 
+    assert isinstance(Laboratorio7.extremosLista([2,5,7], [2,"8"]), str) == isinstance("Error: La segunda lista debe elementos tipo entero", str) 
 
 #####################################################################################################
+
+def test_cortarNumero_1():
+    assert Laboratorio7.cortarNumero(1335, 1, 2) == 33
+
+def test_cortarNumero_2():
+    assert isinstance(str(Laboratorio7.cortarNumero(1335, 8, 2)), str) == isinstance('Error: Indices fuera del rango del número', str)  
+
+###########################################################################    
+
+def test_corrimientoAEntero_1():
+    assert Laboratorio7.corrimientoAEntero(133.5) == 1335
+    
+def test_corrimientoAEntero_2():
+    assert Laboratorio7.corrimientoAEntero(-133.5) == -1335  
