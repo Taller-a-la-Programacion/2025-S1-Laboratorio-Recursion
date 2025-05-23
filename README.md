@@ -69,6 +69,4 @@ Escriba un programa con sintaxis Python cuya función principal se llame **elimi
 
 ```
 
-"Error: El parámetro de entrada debe ser una lista"
 
-```
