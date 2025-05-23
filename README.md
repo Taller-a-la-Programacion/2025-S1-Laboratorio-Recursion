@@ -69,4 +69,28 @@ Escriba un programa con sintaxis Python cuya función principal se llame **elimi
 
 ```
 
+## corrimientoAEntero(num)
+Corrimientos al entero, pasar los números de la parte decimal a la parte entera.
+Mantener el signo en el caso que sea negativo.
+Máximo dos digitos en el decimal
+No usar str() ni convertir a lista u otra función pre construida por python
 
+```python
+>>>corrimientoAEntero(133.5)   
+1335
+>>>corrimientoAEntero(133888.51)   
+13388851
+>>>corrimientoAEntero(-133.5)   
+-1335
+```
+
+## cortarNumero(num, ini, fin)
+Construir una función que reciba un número y ordenados de manera ascendente.
+Para ambos parámetros solo números enteros positivos.
+Verificar que los parámtros **ini** y **fin** no sobre pasen el largo del número.
+```python
+>>>cortarNumero(1335, 1, 2)
+33
+>>>cortarNumero(1335, 8, 2)
+'Error: Indices fuera del rango del número'
+```
