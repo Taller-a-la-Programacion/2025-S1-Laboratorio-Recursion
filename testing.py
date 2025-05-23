@@ -13,6 +13,9 @@ def test_convertirBinario_3():
 def test_digitosOrdenados_1():
     assert Laboratorio7.digitosOrdenados(2345678) == True
 
+def test_digitosOrdenados_2():
+    assert Laboratorio7.digitosOrdenados(92345678) == False
+
 #####################################################################################################
 
 def test_extremosLista_1():
